@@ -1,231 +1,96 @@
 <?php
 
 /*
-
-
-
  * Plugin Name: Titan Car Listing
-
- 
-
  *	description: Titan Car Listing Plugin allow you to Create, edit and manage your car listings .
-
-
-
  *	Version: 1.0.0
-
-
-
  *	Author: Mubashar Alee
-
-
-
 */
 
 
 
-
-
 // Include car listing meta field
-
-
-
-
-
 require_once(plugin_dir_path(__FILE__) . 'templates/titan_car_listing_meta.php');
 
-
-
-
-
 add_action('init', 'titan_init_hook');
-
-
-
-
-
 function titan_init_hook()
-
-
-
-
-
 {
 
-
-
 	add_action("wp_ajax_titan_search_cars", "titan_search_cars");
-
-
-
 	add_action("wp_ajax_nopriv_titan_search_cars", "titan_search_cars");
-
-
-
 	add_action("wp_ajax_titan_filter_listings", "titan_filter_listings");
-
-
-
 	add_action("wp_ajax_nopriv_titan_filter_listings", "titan_filter_listings");
-
-
-
 	add_action("wp_ajax_titan_filter_listings_dashboard", "titan_filter_listings_dashboard");
-
-
-
 	add_action("wp_ajax_nopriv_titan_filter_listings_dashboard", "titan_filter_listings_dashboard");
 
 }
 
 
 
-
-
 function titan_search_cars()
-
-
-
-
 
 {
 
-
-
 	$titan_searched_string = '';
-
-
-
 	$titan_suggestions_html = '';
 
-
-
 	if (isset($_POST['titan_searched_string']) && $_POST['titan_searched_string'] != '') {
-
-
 
 		$titan_searched_string = $_POST['titan_searched_string'];
 
 	}
 
-
-
 	if ($titan_searched_string == '') {
-
-
 
 		echo json_encode('');
 
 	} else {
 
-
-
 		$publications = new WP_Query(
-
-
 
 			array(
 
-
-
 				'posts_per_page' => -1,
-
-
-
 				'post_type' => 'car-listing',
-
-
-
 				'order_by' => 'ASC',
-
-
-
 				's' => $titan_searched_string,
 
-
-
 			)
-
-
 
 		);
 
 
 
-
-
 		if ($publications->have_posts() && $titan_searched_string != '') {
 
-
-
 			$titan_suggestions_html = '<ul>';
-
-
-
 			while ($publications->have_posts()) {
-
-
-
 				$publications->the_post();
-
-
-
 				$titan_suggestions_html .= '<li data-id="' . get_the_ID() . '">' . get_the_title() . '</li>';
 
 			}
-
-
 
 			$titan_suggestions_html .= '</ul>';
 
 		}
 
-
-
 		echo json_encode($titan_suggestions_html);
 
 	}
-
-
 
 	die();
 
 }
 
-
-
 function titan_filter_listings()
-
-
-
 {
 
-
-
 	$titan_searched_string = '';
-
-
-
 	$titan_car_listing_mileage_value = '';
-
-
-
 	$titan_car_listing_price_range_value = 0;
-
-
-
 	$titan_car_listing_year_value  = 0;
-
-
-
 	$titan_car_listing_exterior_color_value = '';
-
-
-
 	$titan_car_listing_interior_color_value = '';
-
-
-
 	$titan_car_listing_transmission_value = '';
 
 
