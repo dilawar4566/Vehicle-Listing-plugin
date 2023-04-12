@@ -1,0 +1,749 @@
+.car-setting-container {
+
+
+
+
+
+    margin: 50px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.wrapper>div {
+
+
+
+
+
+    margin: 15px 0px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media upload css start */
+
+
+
+
+
+
+
+
+
+
+
+.cxc-multi-upload-medias ul li .delete-img {
+
+
+
+
+
+    position: absolute;
+
+
+
+
+
+    right: 3px;
+
+
+
+
+
+    top: 2px;
+
+
+
+
+
+    background: aliceblue;
+
+
+
+
+
+    border-radius: 50%;
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+    font-size: 14px;
+
+
+
+
+
+    line-height: 20px;
+
+
+
+
+
+    color: red;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.cxc-multi-upload-medias ul li {
+
+
+
+
+
+    width: 120px;
+
+
+
+
+
+    display: inline-block;
+
+
+
+
+
+    vertical-align: middle;
+
+
+
+
+
+    margin: 5px;
+
+
+
+
+
+    position: relative;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.cxc-multi-upload-medias ul li img {
+
+
+
+
+
+    width: 100%;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.titan-car-listing-button {
+
+
+
+
+
+    background-color: #F7C214;
+
+
+
+
+
+    border: none;
+
+
+
+
+
+    color: white;
+
+
+
+
+
+    padding: 10px 25px;
+
+
+
+
+
+    text-align: center;
+
+
+
+
+
+    text-decoration: none;
+
+
+
+
+
+    display: inline-block;
+
+
+
+
+
+    font-size: 15px;
+
+
+
+
+
+    margin: 4px 2px;
+
+
+
+
+
+    cursor: pointer;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.titan-car-listing-button:hover {
+
+
+
+
+
+    background-color: black;
+
+
+
+
+
+    color: white
+
+}
+
+
+
+
+
+
+
+
+
+
+
+.dl-car-listing-tr {
+
+
+
+
+
+    width: 30%;
+
+
+
+
+
+    float: left;
+
+
+
+
+
+    margin: 6px 0px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+p.meta-options.titan_listing_field label {
+
+
+
+
+
+    font-size: 11px;
+
+
+
+
+
+    margin-right: 10px;
+
+
+
+
+
+    margin-left: 25px;
+
+
+
+
+
+    font-weight: 700;
+
+
+
+
+
+    margin-top: 5px;
+
+
+
+
+
+    min-width: 75px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+p.meta-options.titan_listing_field {
+
+
+
+
+
+    display: inline-flex;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a.button.remove-row.titan-car-listing-button.titan-car-listing-button {
+
+
+
+
+
+    background-color: #F7C214;
+
+
+
+
+
+    color: white;
+
+
+
+
+
+    border-color: white;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a.button.remove-row.titan-car-listing-button.titan-car-listing-button:hover {
+
+
+
+
+
+    background-color: black;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a#add-row {
+
+
+
+
+
+    background-color: #F7C214;
+
+
+
+
+
+    color: white;
+
+
+
+
+
+    border-color: white;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a#add-row:hover {
+
+
+
+
+
+    background-color: black;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a.cxc_multi_upload_image_button.titan-car-listing-button {
+
+
+
+
+
+    padding: 10px 10px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+a.cxc_multi_remove_image_button.titan-car-listing-button {
+
+
+
+
+
+    padding: 10px 10px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+input.titan-car-listing-button.update {
+
+
+
+
+
+    padding: 8px 25px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+input.titan-car-listing-button.submit-car,
+
+input.titan-car-listing-button.submit-car,
+
+input.titan-car-listing-button.listing_features_type,
+
+input.titan-car-listing-button.listing_body_type
+{
+
+
+
+
+
+    padding: 8px 25px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+button.add_fields.titan-car-listing-button,
+
+button.add_fields_location.titan-car-listing-button,
+
+button.add_fields_features.titan-car-listing-button,
+
+button.add_fields_body.titan-car-listing-button
+{
+
+
+
+
+
+    padding: 8px 25px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+.wrapper_location input[type="text"] {
+
+    width: 50%;
+
+}
+
+
+
+
+
+a.remove_field.titan-car-listing-button,
+
+a.remove_field_location.titan-car-listing-button,
+
+a.remove_field_features.titan-car-listing-button, 
+
+a.remove_field_body.titan-car-listing-button 
+
+{
+
+
+
+
+
+    padding: 5px 15px;
+
+
+
+
+
+    border-radius: 3px;
+
+
+
+
+
+}
+
+
+
+
+
+
+
+
+
+
+
+/* Media upload css end */

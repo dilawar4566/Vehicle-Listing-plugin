@@ -1,0 +1,8853 @@
+    /* @import url('https://fonts.cdnfonts.com/css/montserrat'); */
+
+    @import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,600&display=swap');
+
+
+    * {
+
+        font-family: 'Montserrat', sans-serif;
+
+    }
+
+
+    a {
+
+        color: none;
+    }
+
+    ul,
+
+    ol,
+
+
+    li,
+
+
+
+
+
+    a,
+
+
+
+
+
+
+
+    h1,
+
+
+
+
+
+
+
+    h2,
+
+
+
+
+
+
+
+    h3,
+
+
+
+
+
+
+
+    h4,
+
+
+
+
+
+
+
+    h5,
+
+
+
+
+
+
+
+    p,
+
+
+
+
+
+
+
+    span {
+
+
+
+
+
+
+
+        margin: 0;
+
+
+
+
+
+
+
+        padding: 0;
+
+
+
+
+
+
+
+        list-style-type: none;
+
+
+
+
+
+
+
+        text-decoration: none !important;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-single-car-container {
+
+
+
+
+
+
+
+        position: relative;
+
+
+
+
+
+
+
+        margin: 0 auto;
+
+
+
+
+
+
+
+        overflow: hidden;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        max-width: 1200px;
+
+
+
+
+
+
+
+        padding-bottom: 2%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-archeive-main {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        position: relative;
+
+
+
+
+
+
+
+        margin: 0 auto;
+
+
+
+
+
+
+
+        overflow: hidden;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        /* max-width: 80vw; */
+
+
+
+
+
+
+
+        padding-bottom: 2%;
+
+
+
+
+
+
+
+        padding-top: 3%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-search-container,
+
+
+
+
+
+
+
+    .dl-filter-container {
+
+
+
+
+
+
+
+        /* text-align: center; */
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-search-container {
+
+
+
+
+
+
+
+        display: flex;
+
+
+
+
+
+
+
+        justify-content: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-search-container button.dl-btn:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        background: black;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+    }
+
+
+
+    img#titan_refresh_filters_button_dashboard {
+
+        margin-left: 30px;
+
+        cursor: pointer;
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+    input#dl-search-field,
+
+    #dl-search-field-dashboard {
+
+
+
+
+
+
+
+        background: hsl(240deg 7% 97%);
+
+
+
+
+
+
+
+        border: 1px solid #8080805e;
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+        width: 35%;
+
+
+
+
+
+
+
+        margin-right: 5px;
+
+
+
+
+
+
+
+        padding: 0.5rem 1rem;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    button.dl-btn {
+
+
+
+
+
+
+
+        padding: 10px 50px;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+        text-transform: uppercase;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        background: #F7C214;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-single-car-container img {
+
+
+
+
+
+
+
+        vertical-align: middle;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-archeive-main img {
+
+
+
+
+
+
+
+        vertical-align: middle;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .flickity-button {
+
+
+
+
+
+
+
+        background-color: transparent;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    form.dl-form {
+
+
+
+
+
+
+
+        /* float: left; */
+
+
+
+
+
+
+
+        /* width: 70%; */
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        margin-right: 5px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#titan_archieve_posts {
+
+
+
+
+
+
+
+        display: block;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    span.dl-fil-text img {
+
+
+
+
+
+
+
+        vertical-align: baseline;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media only screen and (min-width: 1500px) {
+
+
+
+
+
+
+
+        .dl-filter,
+
+        .dl-filter-dashboard {
+
+
+
+
+
+
+
+            font-size: 15px !important;
+
+
+
+
+
+
+
+        }
+
+
+
+        .dl-archeive-main {
+
+
+
+
+
+
+
+            max-width: 80vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        select#dl-popular-searches {
+
+
+
+
+
+
+
+            font-size: 15px !important;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    select#dl-popular-searches {
+
+
+
+
+
+
+
+        padding: 0.5rem 1rem;
+
+
+
+
+
+
+
+        border: 1px solid #8080805e;
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+        -webkit-appearance: none;
+
+
+
+
+
+
+
+        -moz-appearance: none;
+
+
+
+
+
+
+
+        background: hsl(240deg 7% 97%);
+
+
+
+
+
+
+
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+
+
+
+
+
+
+
+        background-repeat: no-repeat;
+
+
+
+
+
+
+
+        background-position-x: 96%;
+
+
+
+
+
+
+
+        background-position-y: 10px;
+
+
+
+
+
+
+
+        margin-left: 5px;
+
+
+
+
+
+
+
+        display: inline-block;
+
+
+
+
+
+
+
+        /* float: left; */
+
+
+
+
+
+
+
+        max-width: 16%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+    .dl-filter,
+
+    .dl-filter-dashboard {
+
+
+
+
+
+
+
+        padding: 0.5rem 1rem;
+
+
+
+
+
+
+
+        border: none;
+
+
+
+
+
+
+
+        border-left: 1px solid #8080805e;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+        -webkit-appearance: none;
+
+
+
+
+
+
+
+        -moz-appearance: none;
+
+
+
+
+
+
+
+        background: transparent;
+
+
+
+
+
+
+
+        background-image: url("data:image/svg+xml;utf8,<svg fill='black' height='24' viewBox='0 0 24 24' width='24' xmlns='http://www.w3.org/2000/svg'><path d='M7 10l5 5 5-5z'/><path d='M0 0h24v24H0z' fill='none'/></svg>");
+
+
+
+
+
+
+
+        background-repeat: no-repeat;
+
+
+
+
+
+
+
+        background-position-x: 96%;
+
+
+
+
+
+
+
+        background-position-y: 5px;
+
+
+
+
+
+
+
+        margin-bottom: 20px;
+
+
+
+
+
+
+
+        width: 14%;
+
+
+
+
+
+
+
+        display: inline-block;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#titan_search_suggestions ul li {
+
+
+
+
+
+
+
+        list-style-type: none;
+
+
+
+
+
+
+
+        text-decoration: none;
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+        background: hsl(240deg 7% 97%);
+
+
+
+
+
+
+
+        /* margin: 5px 5px; */
+
+
+
+
+
+
+
+        padding: 12px;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        font-size: 16px;
+
+
+
+
+
+
+
+        float: inline-end;
+
+
+
+
+
+
+
+        /* border-radius: 3px; */
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        text-align: left;
+
+
+
+
+
+
+
+        border-bottom: 0.1px solid rgb(157, 152, 152);
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#titan_search_suggestions ul li:hover {
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        background: black;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#titan_search_suggestions ul {
+
+
+
+
+
+
+
+        /* width: 40%; */
+
+
+
+
+
+
+
+        width: 49.5%;
+
+
+
+
+
+
+
+        padding: 0;
+
+
+
+
+
+
+
+        overflow: hidden;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        /* border-radius: 800px !important; */
+
+
+
+
+
+
+
+        position: absolute;
+
+
+
+
+
+
+
+        z-index: 99;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    div#titan_search_suggestions {
+
+
+
+
+
+
+
+        justify-content: center;
+
+
+
+
+
+
+
+        display: flex;
+
+
+
+
+
+
+
+        margin-right: 23rem;
+
+
+
+
+
+
+
+        /* position: absolute; */
+
+
+
+
+
+
+
+        position: relative;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-single-car {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 31%;
+
+
+
+
+
+
+
+        margin: 1.1%;
+
+
+
+
+
+
+
+        padding-bottom: 20px;
+
+
+
+
+
+
+
+        background-color: hsl(0deg 0% 13% / 12%);
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    img.dl-car-img {
+
+
+
+
+
+
+
+        border-radius: 10px 10px 0px 0px;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        height: 250px;
+
+
+
+
+
+
+
+        object-fit: cover;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    h2.dl-car-title {
+
+
+
+
+
+
+
+        font-size: 1.6vw;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    span.dl-car-model {
+
+
+
+
+
+
+
+        font-size: 14px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-payment-type {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 30%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-name {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 70%;
+
+
+
+
+
+
+
+        padding-left: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-button {
+
+
+
+
+
+
+
+        background-color: hsl(0deg 0% 13% / 70%);
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        padding: 0.1rem 0.3rem;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        display: block;
+
+
+
+
+
+
+
+        font-size: 10px;
+
+
+
+
+
+
+
+        text-decoration: none;
+
+
+
+
+
+
+
+        border-radius: 10px 0px 0px 10px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-titan-car-listing-single {
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        height: 450px;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        background-size: cover;
+
+
+
+
+
+
+
+        background-position: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-titan-car-listing {
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        height: 35vh;
+
+
+
+
+
+
+
+        border-radius: 10px 10px 0px 0px;
+
+
+
+
+
+
+
+        background-size: cover;
+
+
+
+
+
+
+
+        background-position: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-a-btn {
+
+
+
+
+
+
+
+        padding: 10px 14px;
+
+
+
+
+
+
+
+        font-size: .8vw;
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+        border: none;
+
+
+
+
+
+
+
+        text-transform: uppercase;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        background: #F7C214;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        text-decoration: none;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    a.dl-buy {
+
+
+
+
+
+
+
+        background: transparent;
+
+
+
+
+
+
+
+        color: #F7C214;
+
+
+
+
+
+
+
+        border-color: #F7C214;
+
+
+
+
+
+
+
+        border: 2px solid;
+
+
+
+
+
+
+
+        margin-right: 10px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-sidebar-btn-div .dl-a-btn {
+
+
+
+
+
+
+
+        margin: 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    a.dl-compare {
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+        margin-left: 10px;
+
+
+
+        text-decoration: none;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-weekly {
+
+
+
+
+
+
+
+        background-color: #F7C214 !important;
+
+
+
+
+
+
+
+        margin-left: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-payment-type .dl-button {
+
+
+
+
+
+
+
+        padding: 5px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-payment-type .dl-button:hover {
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-price {
+
+
+
+
+
+
+
+        font-size: 1.2vw;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        margin: 0px;
+
+
+
+
+
+
+
+        line-height: 1;
+
+
+
+
+
+
+
+        margin-bottom: 3px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-details {
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        /* padding-top: 10px;
+
+
+
+
+
+
+
+        margin: 10px 1vw;
+
+
+
+
+
+
+
+        border-top: 1px solid #80808040; */
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-details span {
+
+
+
+
+
+
+
+        font-size: 0.9vw;
+
+
+
+
+
+
+
+        font-weight: 400;
+
+
+
+
+
+
+
+        /* padding-right: 40px; */
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 33%;
+
+
+
+
+
+
+
+        margin: 10px 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-archeive .dl-highlights {
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        font-size: 1rem;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        margin: 0;
+
+
+
+
+
+
+
+        padding: 15px 15px 5px 15px;
+
+
+
+
+
+
+
+        border-top: 1px solid #8080805e;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-highlights img {
+
+
+
+
+
+
+
+        vertical-align: inherit;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-compare-div {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        /* width: 51%; */
+
+
+
+
+
+
+
+        margin-right: 7px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-buy-div {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 38%;
+
+
+
+
+
+
+
+        margin: 0px 5.7%;
+
+
+
+
+
+
+
+        /* justify-content: center; */
+
+
+
+
+
+
+
+        /* display: flex; */
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-details {
+
+
+
+
+
+
+
+        margin-bottom: 30px;
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        padding: 0px 10px;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        min-height: 28vh;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-name a {
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-details a {
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-single-car-details {
+
+
+
+
+
+
+
+        padding-left: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-fil-text {
+
+
+
+
+
+
+
+        margin-right: 30px;
+
+
+
+
+
+
+
+        font-size: 20px;
+
+
+
+
+
+
+
+        font-weight: 800;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-filter-container {
+
+
+
+
+
+
+
+        margin: 20px 0px;
+
+
+
+
+
+
+
+        border-bottom: 1px solid #8080805c;
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-img {
+
+
+
+
+
+
+
+        position: relative;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        margin-bottom: 10px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-category-name {
+
+
+
+
+
+
+
+        position: absolute;
+
+
+
+
+
+
+
+        top: 16px;
+
+
+
+
+
+
+
+        right: 16px;
+
+
+
+
+
+
+
+        background: #221e1e7a;
+
+
+
+
+
+
+
+        padding: 10px 30px;
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Start single car page css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-left-column {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 60%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-right-column {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 33%;
+
+
+
+
+
+
+
+        margin: 0px 0px 0px 40px;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        padding: 30px 0px 30px 0px;
+
+
+
+
+
+
+
+        background: #8080801f;
+
+
+
+
+
+
+
+        border: 2px solid #8080804f;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-a-btn:hover {
+
+
+
+
+
+
+
+        background: black;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .carousel-cell2 {
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        margin-right: 10px;
+
+
+
+
+
+
+
+        background: #80808008;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .carousel-cell1 {
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        margin-right: 10px;
+
+
+
+
+
+
+
+        background: #80808008;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-car-img-carousel {
+
+
+
+
+
+
+
+        border-radius: 10px !important;
+
+
+
+
+
+
+
+        height: 400px !important;
+
+
+
+
+
+
+
+        object-fit: fill;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #myImg {
+
+
+
+
+
+
+
+        border-radius: 5px;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        transition: 0.3s;
+
+
+
+
+
+
+
+        width: 90%;
+
+
+
+
+
+
+
+        height: auto;
+
+
+
+
+
+
+
+        overflow: hidden;
+
+
+
+
+
+
+
+        margin: 5px;
+
+
+
+
+
+
+
+        min-height: 90px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* a {
+
+
+
+
+
+
+
+    text-decoration: none !important;
+
+
+
+
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #myImg:hover {
+
+
+
+
+
+
+
+        opacity: 0.7;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* The Modal (background) */
+
+
+
+
+
+
+
+    .modal {
+
+
+
+
+
+
+
+        display: none;
+
+
+
+
+
+
+
+        /* Hidden by default */
+
+
+
+
+
+
+
+        position: fixed;
+
+
+
+
+
+
+
+        /* Stay in place */
+
+
+
+
+
+
+
+        z-index: 1;
+
+
+
+
+
+
+
+        /* Sit on top */
+
+
+
+
+
+
+
+        padding-top: 100px;
+
+
+
+
+
+
+
+        /* Location of the box */
+
+
+
+
+
+
+
+        left: 0;
+
+
+
+
+
+
+
+        top: 0;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        /* Full width */
+
+
+
+
+
+
+
+        height: 100%;
+
+
+
+
+
+
+
+        /* Full height */
+
+
+
+
+
+
+
+        overflow: auto;
+
+
+
+
+
+
+
+        /* Enable scroll if needed */
+
+
+
+
+
+
+
+        background-color: rgb(0, 0, 0);
+
+
+
+
+
+
+
+        /* Fallback color */
+
+
+
+
+
+
+
+        background-color: rgba(0, 0, 0, 0.9);
+
+
+
+
+
+
+
+        /* Black w/ opacity */
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Modal Content (image) */
+
+
+
+
+
+
+
+    .modal-content {
+
+
+
+
+
+
+
+        margin: auto;
+
+
+
+
+
+
+
+        display: block;
+
+
+
+
+
+
+
+        width: 80%;
+
+
+
+
+
+
+
+        max-width: 700px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Caption of Modal Image */
+
+
+
+
+
+
+
+    #caption {
+
+
+
+
+
+
+
+        margin: auto;
+
+
+
+
+
+
+
+        display: block;
+
+
+
+
+
+
+
+        width: 80%;
+
+
+
+
+
+
+
+        max-width: 700px;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        color: #ccc;
+
+
+
+
+
+
+
+        padding: 10px 0;
+
+
+
+
+
+
+
+        height: 150px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Add Animation */
+
+
+
+
+
+
+
+    .modal-content,
+
+
+
+
+
+
+
+    #caption {
+
+
+
+
+
+
+
+        -webkit-animation-name: zoom;
+
+
+
+
+
+
+
+        -webkit-animation-duration: 0.6s;
+
+
+
+
+
+
+
+        animation-name: zoom;
+
+
+
+
+
+
+
+        animation-duration: 0.6s;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @-webkit-keyframes zoom {
+
+
+
+
+
+
+
+        from {
+
+
+
+
+
+
+
+            -webkit-transform: scale(0);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        to {
+
+
+
+
+
+
+
+            -webkit-transform: scale(1);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @keyframes zoom {
+
+
+
+
+
+
+
+        from {
+
+
+
+
+
+
+
+            transform: scale(0);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        to {
+
+
+
+
+
+
+
+            transform: scale(1);
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* The Close Button */
+
+
+
+
+
+
+
+    .close {
+
+
+
+
+
+
+
+        position: absolute;
+
+
+
+
+
+
+
+        top: 15px;
+
+
+
+
+
+
+
+        right: 35px;
+
+
+
+
+
+
+
+        color: #f1f1f1;
+
+
+
+
+
+
+
+        font-size: 40px;
+
+
+
+
+
+
+
+        font-weight: bold;
+
+
+
+
+
+
+
+        transition: 0.3s;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .close:hover,
+
+
+
+
+
+
+
+    .close:focus {
+
+
+
+
+
+
+
+        color: #bbb;
+
+
+
+
+
+
+
+        text-decoration: none;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* 100% Image Width on Smaller Screens */
+
+
+
+
+
+
+
+    @media only screen and (max-width: 700px) {
+
+
+
+
+
+
+
+        .modal-content {
+
+
+
+
+
+
+
+            width: 100%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        a.dl-buy {
+
+
+
+
+
+
+
+            margin-right: 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        a.dl-compare {
+
+
+
+
+
+
+
+            margin-left: 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .myGallery {
+
+
+
+
+
+
+
+        height: auto;
+
+
+
+
+
+
+
+        overflow: hidden;
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 16%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-back-btn {
+
+
+
+
+
+
+
+        text-align: left;
+
+
+
+
+
+
+
+        margin: 50px 10px;
+
+
+
+
+
+
+
+        width: 95%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-buy-now-side {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        padding: 15px 19%;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-sidebar-btn-div>.dl-buy {
+
+
+
+
+
+
+
+        padding: 15px 14%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-sidebar-btn-div>.dl-compare {
+
+
+
+
+
+
+
+        padding: 15px 25%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-sidebar-btn-div {
+
+
+
+
+
+
+
+        margin: 50px 0px;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-signle-desc {
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-main-point-service p {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 50%;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        margin: 10px 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-main-point-service {
+
+
+
+
+
+
+
+        margin: 30px 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-right-column-highlights {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 95%;
+
+
+
+
+
+
+
+        margin: 0px 0px 20px 0px;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        padding: 30px 0px;
+
+
+
+
+
+
+
+        background: #8080801f;
+
+
+
+
+
+
+
+        border: 2px solid #8080804f;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-right-column-highlights .dl-car-details {
+
+
+
+
+
+
+
+        min-height: 0px;
+
+
+
+
+
+
+
+        margin-bottom: 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-right-column-highlights .dl-main-point-service p {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 30%;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        margin: 10px 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-all-car-details {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 47%;
+
+
+
+
+
+
+
+        margin: 10px 10px 10px 0px;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        padding: 15px 15px;
+
+
+
+
+
+
+
+        background: #8080801f;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-left-heading {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        font-size: 1vw;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        margin: 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-right-heading {
+
+
+
+
+
+
+
+        float: right;
+
+
+
+
+
+
+
+        margin: 0px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-left-bottom-container {
+
+
+
+
+
+
+
+        margin: 20px 0px;
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .dl-about-vehicle {
+
+
+
+
+
+
+
+    float: left;
+
+
+
+
+
+
+
+    margin: 0px 0px 0px 10px;
+
+
+
+
+
+
+
+    width: 50%;
+
+
+
+
+
+
+
+} */
+
+
+
+
+
+
+
+    .dl-about-vehicle {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        padding: 30px 30px;
+
+
+
+
+
+
+
+        width: 57%;
+
+
+
+
+
+
+
+        margin: 0px 0px 20px 0px;
+
+
+
+
+
+
+
+        border-radius: 10px;
+
+
+
+
+
+
+
+        /* padding: 30px 0px; */
+
+
+
+
+
+
+
+        background: #8080801f;
+
+
+
+
+
+
+
+        border: 2px solid #8080804f;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-about-vehicle h2 {
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        font-size: 27px;
+
+
+
+
+
+
+
+        margin-bottom: 20px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-about-vehicle p {
+
+
+
+
+
+
+
+        font-size: 17px;
+
+
+
+
+
+
+
+        font-weight: 400;
+
+
+
+
+
+
+
+        line-height: 25px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    h2.dl-highlights-title {
+
+
+
+
+
+
+
+        font-size: 2vw;
+
+
+
+
+
+
+
+        font-weight: 700;
+
+
+
+
+
+
+
+        padding-left: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* End single car page css */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Car listing metabox style start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .titan_listing_box {
+
+
+
+
+
+
+
+        display: grid;
+
+
+
+
+
+
+
+        grid-template-columns: max-content 1fr;
+
+
+
+
+
+
+
+        grid-row-gap: 10px;
+
+
+
+
+
+
+
+        grid-column-gap: 20px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .titan_listing_field {
+
+
+
+
+
+
+
+        display: contents;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .dl-category-name a {
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    button.flickity-button {
+
+
+
+
+
+
+
+        border: none;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    button.flickity-button:hover {
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+        background: none;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Car listing metabox style end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Media query start */
+
+
+
+
+
+
+
+    @media screen and (max-width: 769px) {
+
+
+
+
+
+
+
+        .dl-filter,
+
+        .dl-filter-dashboard {
+
+
+
+
+
+
+
+            font-size: 1.3vw;
+
+
+
+
+
+
+
+            width: 10%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-single-car {
+
+
+
+
+
+
+
+            width: 47%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-details span {
+
+
+
+
+
+
+
+            font-size: 1.5vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-details-second span {
+
+
+
+
+
+
+
+            font-size: 1.5vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-a-btn {
+
+
+
+
+
+
+
+            font-size: 1.8vw;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-all-car-details {
+
+
+
+
+
+
+
+            width: 96%;
+
+
+
+
+
+
+
+            margin: 10px 10px 10px 0px
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-titan-car-listing-single {
+
+
+
+
+
+
+
+            height: 350px;
+
+
+
+
+
+
+
+            width: 95%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-right-column {
+
+
+
+
+
+
+
+            width: 42%;
+
+
+
+
+
+
+
+            margin: 0px 5px 0px 15px;
+
+
+
+
+
+
+
+            padding: 30px 0px 30px 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-about-vehicle {
+
+
+
+
+
+
+
+            padding: 15px 15px;
+
+
+
+
+
+
+
+            width: 54%;
+
+
+
+
+
+
+
+            margin: 0px 5px 0px 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-right-column-highlights {
+
+
+
+
+
+
+
+            width: 95%;
+
+
+
+
+
+
+
+            margin: 0px 0px 0px 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-left-column {
+
+
+
+
+
+
+
+            width: 98%;
+
+
+
+
+
+
+
+            margin-left: 10px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-left-heading {
+
+
+
+
+
+
+
+            font-size: 2vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (max-width: 525px) {
+
+
+
+
+
+
+
+        .dl-single-car {
+
+
+
+
+
+
+
+            width: 95%;
+
+
+
+
+
+
+
+        }
+
+
+
+        .dl-filter-container {
+
+
+
+            text-align: left;
+
+
+
+            margin-left: 10px;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+        .dl-search-container {
+
+
+
+            display: block;
+
+
+
+            margin-left: 10px;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        #myImg {
+
+
+
+
+
+
+
+            min-height: 3rem;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-details span {
+
+
+
+
+
+
+
+            font-size: 3vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h2.dl-highlights-title {
+
+
+
+
+
+
+
+            font-size: 8vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-details-second span {
+
+
+
+
+
+
+
+            font-size: 3vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-a-btn {
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        h2.dl-car-title {
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-price {
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        p.dl-left-heading {
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-right-column {
+
+
+
+
+
+
+
+            width: 93%;
+
+
+
+
+
+
+
+            margin: 0px 0px 0px 15px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-right-column-highlights {
+
+
+
+
+
+
+
+            width: 95%;
+
+
+
+
+
+
+
+            margin: 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-right-column-highlights .dl-main-point-service p {
+
+
+
+
+
+
+
+            width: 50%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-about-vehicle {
+
+
+
+
+
+
+
+            margin: 20px 0px 0px 20px;
+
+
+
+
+
+
+
+            width: 91%;
+
+
+
+
+
+
+
+            padding: 31px 15px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-left-bottom-container {
+
+
+
+
+
+
+
+            margin: 20px 0px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-about-vehicle p {
+
+
+
+
+
+
+
+            width: 94%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        select#dl-popular-searches {
+
+
+
+            font-size: 4vw;
+
+
+
+            max-width: 60%;
+
+
+
+            margin-top: 10px;
+
+
+
+            margin-left: 0px;
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-filter,
+
+        .dl-filter-dashboard {
+
+
+
+
+
+
+
+            font-size: 3.8vw;
+
+
+
+
+
+
+
+            width: 47%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        form.dl-form {
+
+
+
+
+
+
+
+            width: 95%;
+
+
+
+
+
+
+
+            text-align: left;
+
+
+
+
+
+
+
+            margin-bottom: 10px;
+
+
+
+
+
+
+
+            margin-top: 50px;
+
+
+
+
+
+
+
+            margin-left: 20px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-search {
+
+
+
+
+
+
+
+            padding: 10px 20px !important;
+
+
+
+
+
+
+
+            font-size: 4vw !important;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        input#dl-search-field,
+
+        #dl-search-field-dashboard {
+
+
+
+
+
+
+
+            margin-right: 10px;
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+            width: 60%;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        .dl-btn {
+
+
+
+
+
+
+
+            padding: 10px 20px;
+
+
+
+
+
+
+
+            font-size: 4vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* Media query end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* #bar-fixed.stickIt {
+
+
+
+
+
+
+
+    position: fixed;
+
+
+
+
+
+
+
+    top: 0px;
+
+
+
+
+
+
+
+  } */
+
+
+
+
+
+
+
+    /* div#bar-fixed {
+
+
+
+
+
+
+
+    width: 30%;
+
+
+
+
+
+
+
+} */
+
+
+
+
+
+
+
+    #bar-fixed.stickIt {
+
+
+
+
+
+
+
+        /* position: fixed; */
+
+
+
+
+
+
+
+        top: 0px;
+
+
+
+
+
+
+
+        /* right: 100px; */
+
+
+
+
+
+
+
+        /* float: left; */
+
+
+
+
+
+
+
+        /* width: 20%; */
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* .car-listing-sidebar{
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+} */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 800px) {
+
+
+
+
+
+
+
+        .car-listing-sidebar {
+
+
+
+
+
+
+
+            width: 392px;
+
+
+
+
+
+
+
+            border-radius: 10px;
+
+
+
+
+
+
+
+            padding: 30px 0px 30px 0px;
+
+
+
+
+
+
+
+            background: #8080801f;
+
+
+
+
+
+
+
+            border: 2px solid #8080804f;
+
+
+
+
+
+
+
+            position: fixed;
+
+
+
+
+
+
+
+            top: 20px;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    @media screen and (min-width: 1800px) {
+
+
+
+
+
+
+
+        div#outer .dl-a-btn {
+
+
+
+
+
+
+
+            font-size: .7vw;
+
+
+
+
+
+
+
+        }
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    #outer {
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+        text-align: center;
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .inner {
+
+
+
+
+
+
+
+        display: inline-block;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-group {
+
+
+
+
+
+
+
+        float: left;
+
+
+
+
+
+
+
+        width: 100%;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-sidbar {
+
+
+
+
+
+
+
+        text-align: -webkit-center;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-group .dl-a-btn {
+
+
+
+
+
+
+
+        background-color: #F7C214;
+
+
+
+
+
+
+
+        /* Green background */
+
+
+
+
+
+
+
+        border: 1px solid #F7C214;
+
+
+
+
+
+
+
+        /* Green border */
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        /* White text */
+
+
+
+
+
+
+
+        padding: 10px 24px;
+
+
+
+
+
+
+
+        /* Some padding */
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+        /* Pointer/hand icon */
+
+
+
+
+
+
+
+        display: block;
+
+
+
+
+
+
+
+        /* Make the buttons appear below each other */
+
+
+
+
+
+
+
+        margin: 10px 10px;
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-group .dl-text-btn {
+
+
+
+
+
+
+
+        background-color: transparent !important;
+
+
+
+
+
+
+
+        color: black;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-group .dl-text-btn:hover {
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        background: black !important;
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .btn-group .dl-a-btn:hover {
+
+
+
+
+
+
+
+        background: black;
+
+
+
+
+
+
+
+        color: white;
+
+
+
+
+
+
+
+        border: 2px solid #F7C214;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-listing-refresh {
+
+
+
+
+
+
+
+        margin-left: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-listing-refresh img {
+
+
+
+
+
+
+
+        margin-top: 10px;
+
+
+
+
+
+
+
+        cursor: pointer;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .rotate {
+
+
+
+
+
+
+
+        -moz-transition: all .5s linear;
+
+
+
+
+
+
+
+        -webkit-transition: all .5s linear;
+
+
+
+
+
+
+
+        transition: all .5s linear;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .rotate.down {
+
+
+
+
+
+
+
+        -moz-transform: rotate(180deg);
+
+
+
+
+
+
+
+        -webkit-transform: rotate(1800deg);
+
+
+
+
+
+
+
+        transform: rotate(180deg);
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    /* dashboard style start */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    .car-listing-frontend-table td,
+
+
+
+
+
+
+
+    .car-listing-frontend-table th {
+
+
+
+
+
+
+
+        padding: 15px !important;
+
+
+
+
+
+
+
+        line-height: 1.5;
+
+
+
+
+
+
+
+        vertical-align: top;
+
+
+
+
+
+
+
+        width: 20%;
+
+
+
+
+
+
+
+        border: 1px solid hsla(0, 0%, 50.2%, .5019607843137255);
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    p.dl-car-listing-form-field {
+
+
+
+
+
+
+
+        margin: 15px;
+
+
+
+
+
+
+
+    }
+
+
+
+
+
+
+
+    .car_listing_add_new {
+
+
+
+        text-align: right;
+
+
+
+        margin: 20px 0px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .car_listing_add_new a {
+
+
+
+        text-decoration: none;
+
+
+
+    }
+
+
+
+
+
+
+
+    p.dl-car-listing-form-field img {
+
+
+
+        width: 15%;
+
+
+
+        border-radius: 5px;
+
+
+
+        justify-content: center;
+
+
+
+        display: flex;
+
+
+
+    }
+
+
+
+
+
+
+
+    .input-group-prepend {
+
+
+
+        margin: 10px 0px;
+
+
+
+    }
+
+
+
+
+
+
+
+    input.form-control.m-input {
+
+
+
+        float: left;
+
+
+
+        width: 90%;
+
+
+
+        margin-right: 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    .titan_car_image {
+
+
+
+        width: 100px;
+
+
+
+        height: 100px;
+
+
+
+        position: relative;
+
+
+
+    }
+
+
+
+
+
+
+
+    .titan_btn_delete {
+
+
+
+        position: absolute;
+
+
+
+        left: 100%;
+
+
+
+        margin-left: -10px;
+
+
+
+        margin-top: 2px;
+
+
+
+        cursor: pointer;
+
+
+
+    }
+
+
+
+
+
+
+
+    .titan_car_list_img {
+
+
+
+        width: 100px;
+
+
+
+        float: left;
+
+
+
+        height: 100px;
+
+
+
+        margin-bottom: 5px;
+
+
+
+        margin-left: 5px;
+
+
+
+        border: 2px solid #b06c1c;
+
+
+
+        border-radius: 10px;
+
+
+
+    }
+
+
+
+
+
+
+
+    #titan_car_container {
+
+
+
+        overflow: auto;
+
+
+
+    }
+
+
+
+
+
+
+
+    #titan_car_container .image {
+
+
+
+        width: 100px;
+
+
+
+        height: 100px;
+
+
+
+        float: left;
+
+
+
+        margin: 5px;
+
+
+
+        border-radius: 3px;
+
+
+
+        background-size: cover;
+
+
+
+        position: relative;
+
+
+
+        background-repeat: no-repeat;
+
+
+
+    }
+
+
+
+
+
+
+
+    #titan_car_container a.delete {
+
+
+
+        display: block;
+
+
+
+        position: absolute;
+
+
+
+        top: 0px;
+
+
+
+        right: 0;
+
+
+
+        width: 20px;
+
+
+
+        text-align: center;
+
+
+
+        height: 25px;
+
+
+
+        text-decoration: none;
+
+
+
+        /* text-indent: -999px; */
+
+
+
+        background: red;
+
+
+
+        color: white;
+
+
+
+        font-size: 20px;
+
+
+
+        color: white;
+
+
+
+    }
+
+
+
+    p.dl-car-listing-form-field.titan_save {
+
+
+
+        text-align: right;
+
+
+
+    }
+
+
+
+    input[type="file"] {
+
+
+
+        color: transparent;
+
+
+
+    }
+
+
+
+    input[type="files"] {
+
+
+
+        color: transparent;
+
+
+
+    }
+
+
+
+    .titan_car_permission {
+
+
+
+        height: 90vh;
+
+    }
+
+
+
+    .titan_car_login {
+
+        text-align: center;
+
+        height: 60vh;
+
+    }
+
+
+
+    .titan_car_login a {
+
+        font-size: 25px;
+
+        width: 50%;
+
+        display: inline-block;
+
+        text-align: center;
+
+    }
+
+
+
+    .titan_car_permission h1 {
+
+        margin: 10vh 0vh;
+
+        font-size: 45px;
+
+
+
+        font-weight: bold;
+
+
+
+        font-family: 'Montserrat';
+
+
+
+    }
+
+
+
+    td.listing_delete_edit {
+
+        min-width: 15vw;
+
+    }
+
+
+
+    .car_listing_popup {
+
+        position: fixed;
+
+        z-index: 1;
+
+        left: 0;
+
+        top: 0;
+
+        width: 100%;
+
+        height: 100%;
+
+        overflow: auto;
+
+        background-color: rgba(0, 0, 0, 0.4);
+
+        display: block;
+
+    }
+
+
+
+    .car_listing_popup-content {
+
+        background-color: white;
+
+        margin: 15% auto;
+
+        padding: 20px;
+
+        width: 50%;
+
+        font-weight: bolder;
+
+        border-radius: 5px;
+
+    }
+
+
+
+  
+
+
+
+    /* dashboard style end */
+
+    /* upload media css start */
+
+    .upload__btn-box {
+
+        margin-bottom: 20px;
+
+    }
+
+
+
+    .upload__box {
+
+        padding: 10px;
+
+    }
+
+
+
+    .upload__inputfile {
+
+        width: 0.1px;
+
+        height: 0.1px;
+
+        opacity: 0;
+
+        overflow: hidden;
+
+        position: absolute;
+
+        z-index: -1;
+
+    }
+
+
+
+    .upload__btn {
+
+        display: inline-block;
+
+        font-weight: 600;
+
+        color: #0c0d0e;
+
+        text-align: center;
+
+        min-width: 116px;
+
+        padding: 5px;
+
+        transition: all 0.3s ease;
+
+        cursor: pointer;
+
+        border: 1px solid;
+
+        background-color: #ccc;
+
+        border-color: #0c0d0e;
+
+        /* border-radius: 10px; */
+
+        line-height: 26px;
+
+        font-size: 14px;
+
+    }
+
+
+
+    .upload__btn:hover {
+
+        background-color: unset;
+
+        transition: all 0.3s ease;
+
+    }
+
+
+
+    .upload__img-wrap {
+
+        display: flex;
+
+        flex-wrap: wrap;
+
+        margin: 0 -10px;
+
+    }
+
+
+
+    .upload__img-box {
+
+        width: 200px;
+
+        padding: 0 10px;
+
+        margin-bottom: 12px;
+
+    }
+
+
+
+    .upload__img-close {
+
+        width: 24px;
+
+        height: 24px;
+
+        border-radius: 50%;
+
+        background-color: rgba(0, 0, 0, 0.5);
+
+        position: absolute;
+
+        top: 10px;
+
+        right: 10px;
+
+        text-align: center;
+
+        line-height: 24px;
+
+        z-index: 1;
+
+        cursor: pointer;
+
+    }
+
+
+
+    .upload__img-close:after {
+
+        content: "✖";
+
+        font-size: 14px;
+
+        color: white;
+
+    }
+
+
+
+    .img-bg {
+
+        background-repeat: no-repeat;
+
+        background-position: center;
+
+        background-size: cover;
+
+        position: relative;
+
+        padding-bottom: 100%;
+
+    }
+
+
+
+    /* upload media css end */
