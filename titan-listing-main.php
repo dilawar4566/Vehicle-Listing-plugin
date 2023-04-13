@@ -23,7 +23,6 @@ function titan_init_hook()
 	add_action("wp_ajax_nopriv_titan_filter_listings", "titan_filter_listings");
 	add_action("wp_ajax_titan_filter_listings_dashboard", "titan_filter_listings_dashboard");
 	add_action("wp_ajax_nopriv_titan_filter_listings_dashboard", "titan_filter_listings_dashboard");
-
 }
 
 
@@ -37,13 +36,11 @@ function titan_search_cars()
 	if (isset($_POST['titan_searched_string']) && $_POST['titan_searched_string'] != '') {
 
 		$titan_searched_string = $_POST['titan_searched_string'];
-
 	}
 
 	if ($titan_searched_string == '') {
 
 		echo json_encode('');
-
 	} else {
 
 		$publications = new WP_Query(
@@ -65,19 +62,15 @@ function titan_search_cars()
 			while ($publications->have_posts()) {
 				$publications->the_post();
 				$titan_suggestions_html .= '<li data-id="' . get_the_ID() . '">' . get_the_title() . '</li>';
-
 			}
 
 			$titan_suggestions_html .= '</ul>';
-
 		}
 
 		echo json_encode($titan_suggestions_html);
-
 	}
 
 	die();
-
 }
 
 function titan_filter_listings()
@@ -98,216 +91,96 @@ function titan_filter_listings()
 	if (isset($_POST['titan_type']) && $_POST['titan_type'] != '') {
 
 		$titan_type = $_POST['titan_type'];
-
 	}
-
-
 
 	if (isset($_POST['titan_searched_string']) && $_POST['titan_searched_string'] != '') {
 
 		$titan_searched_string = $_POST['titan_searched_string'];
-
 	}
 
 
 	if (isset($_POST['titan_car_mileage']) && $_POST['titan_car_mileage'] != '') {
 
 
-
-
-
 		$titan_car_listing_mileage_value = $_POST['titan_car_mileage'];
-
-
 
 		if ($titan_car_listing_mileage_value == 'above') {
 
-
-
 			array_push($titan_custom_meta_query, array(
 
-
-
 				'key' => 'titan_listing_distance',
-
-
-
 				'value' => 10000,
-
-
-
 				'compare' => '>=',
-
-
-
 				'type'     => 'numeric',
 
-
-
 			));
-
 		} else {
 
-
-
 			array_push($titan_custom_meta_query, array(
 
-
-
 				'key' => 'titan_listing_distance',
-
-
-
 				'value' => $titan_car_listing_mileage_value,
-
-
-
 				'compare' => '<=',
-
-
-
 				'type'     => 'numeric',
 
-
-
 			));
-
 		}
-
 	}
-
-
-
 
 
 	if (isset($_POST['titan_car_price_range']) && $_POST['titan_car_price_range'] != 0) {
 
-
-
-
-
 		$titan_car_listing_price_range_value = $_POST['titan_car_price_range'];
-
-
-
-
 
 		array_push($titan_custom_meta_query, array(
 
-
-
-
-
 			'key' => 'titan_listing_down_payment',
-
-
-
 			'value' => $titan_car_listing_price_range_value,
-
-
-
 			'compare' => '<=',
-
-
-
 			'type'     => 'numeric',
 
 		));
-
 	}
-
-
-
 
 
 	if (isset($_POST['titan_car_year']) && $_POST['titan_car_year'] != '') {
 
-
-
 		$titan_car_listing_year_value = $_POST['titan_car_year'];
-
-
 
 		array_push($titan_custom_meta_query, array(
 
-
-
 			'key' => 'titan_listing_car_making_year',
-
-
-
 			'value' => $titan_car_listing_year_value,
-
-
-
 			'compare' => '=',
 
-
-
 		));
-
 	}
-
-
-
 
 
 	if (isset($_POST['titan_car_make']) && $_POST['titan_car_make'] != '') {
 
-
-
 		$titan_car_make = $_POST['titan_car_make'];
-
-
-
 		array_push($titan_custom_meta_query, array(
 
-
-
 			'key' => 'titan_listing_make_name',
-
-
-
 			'value' => $titan_car_make,
-
-
-
 			'compare' => '=',
 
-
-
 		));
-
 	}
-
 
 
 	if (isset($_POST['titan_car_model']) && $_POST['titan_car_model'] != '') {
 
-
-
 		$titan_car_model = $_POST['titan_car_model'];
-
-
 
 		array_push($titan_custom_meta_query, array(
 
-
-
 			'key' => 'titan_listing_car_model',
-
-
-
 			'value' => $titan_car_model,
-
-
-
 			'compare' => '=',
 
-
-
 		));
-
 	}
 
 
@@ -341,7 +214,6 @@ function titan_filter_listings()
 
 
 		));
-
 	}
 
 
@@ -389,7 +261,6 @@ function titan_filter_listings()
 			)
 
 		);
-
 	} else {
 
 
@@ -437,7 +308,6 @@ function titan_filter_listings()
 
 
 		);
-
 	}
 
 
@@ -487,7 +357,6 @@ function titan_filter_listings()
 
 
 				$listing_post_thumbnail = 'https://upload.wikimedia.org/wikipedia/commons/thumb/d/d1/Image_not_available.png/640px-Image_not_available.png';
-
 			}
 
 
@@ -507,7 +376,6 @@ function titan_filter_listings()
 
 
 				$term_list[0] = 'No Category';
-
 			}
 
 
@@ -527,7 +395,6 @@ function titan_filter_listings()
 
 
 				$titan_listing_car_model = 'N/A';
-
 			}
 
 
@@ -547,7 +414,6 @@ function titan_filter_listings()
 
 
 				$titan_listing_distance = 'N/A';
-
 			}
 
 
@@ -635,9 +501,7 @@ function titan_filter_listings()
 
 
 									</div>';
-
 				}
-
 			} else {
 
 
@@ -653,7 +517,6 @@ function titan_filter_listings()
 
 
 								</div>';
-
 			}
 
 
@@ -827,9 +690,7 @@ function titan_filter_listings()
 
 
 					$titan_listing_html .= '<span> ' . $field['Featurename'] . '</span>';
-
 				}
-
 			}
 
 
@@ -889,25 +750,21 @@ function titan_filter_listings()
 
 
 				</div>';
-
 		}
 
 
 
 		echo json_encode($titan_listing_html);
-
 	} else {
 
 
 
 		echo json_encode("No Listings");
-
 	}
 
 
 
 	die();
-
 }
 
 
@@ -1015,7 +872,6 @@ function titan_filter_listings_dashboard()
 
 
 		$titan_type = $_POST['titan_type'];
-
 	}
 
 
@@ -1027,7 +883,6 @@ function titan_filter_listings_dashboard()
 
 
 		$titan_searched_string = $_POST['titan_searched_string'];
-
 	}
 
 
@@ -1069,7 +924,6 @@ function titan_filter_listings_dashboard()
 
 
 			));
-
 		} else {
 
 
@@ -1095,9 +949,7 @@ function titan_filter_listings_dashboard()
 
 
 			));
-
 		}
-
 	}
 
 
@@ -1137,7 +989,6 @@ function titan_filter_listings_dashboard()
 			'type'     => 'numeric',
 
 		));
-
 	}
 
 
@@ -1169,7 +1020,6 @@ function titan_filter_listings_dashboard()
 
 
 		));
-
 	}
 
 
@@ -1201,7 +1051,6 @@ function titan_filter_listings_dashboard()
 
 
 		));
-
 	}
 
 
@@ -1231,7 +1080,6 @@ function titan_filter_listings_dashboard()
 
 
 		));
-
 	}
 
 
@@ -1265,7 +1113,6 @@ function titan_filter_listings_dashboard()
 
 
 		));
-
 	}
 
 
@@ -1313,7 +1160,6 @@ function titan_filter_listings_dashboard()
 			)
 
 		);
-
 	} else {
 
 
@@ -1361,7 +1207,6 @@ function titan_filter_listings_dashboard()
 
 
 		);
-
 	}
 
 
@@ -1411,7 +1256,6 @@ function titan_filter_listings_dashboard()
 
 
 				$titan_listing_make_name = 'N/A';
-
 			}
 
 
@@ -1431,7 +1275,6 @@ function titan_filter_listings_dashboard()
 
 
 				$titan_listing_car_making_year = 'N/A';
-
 			}
 
 
@@ -1451,7 +1294,6 @@ function titan_filter_listings_dashboard()
 
 
 				$titan_listing_car_model = 'N/A';
-
 			}
 
 
@@ -1471,7 +1313,6 @@ function titan_filter_listings_dashboard()
 
 
 				$titan_listing_map_location = 'N/A';
-
 			}
 
 
@@ -1491,7 +1332,6 @@ function titan_filter_listings_dashboard()
 
 
 				$titan_listing_stock_number = 'N/A';
-
 			}
 
 
@@ -1607,7 +1447,6 @@ function titan_filter_listings_dashboard()
 
 
 			';
-
 		}
 
 		$titan_listing_html .= '</table>';
@@ -1615,19 +1454,16 @@ function titan_filter_listings_dashboard()
 
 
 		echo json_encode($titan_listing_html);
-
 	} else {
 
 
 
 		echo json_encode("No Listings");
-
 	}
 
 
 
 	die();
-
 }
 
 
@@ -1653,7 +1489,6 @@ function titan_admin_scripts()
 
 
 	wp_enqueue_script('titan-car-listing-scripts', plugins_url('assets/js/titan-car-listing-admin.js', __FILE__));
-
 }
 
 
@@ -1698,12 +1533,11 @@ function titan_all_scripts()
 
 
 
-	wp_register_style( 'titan_car_listing_select_two_css', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css' );
+	wp_register_style('titan_car_listing_select_two_css', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/css/select2.min.css');
 
 
 
 	wp_register_script('titan_car_listing_select_two', 'https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.6-rc.0/js/select2.min.js', null, null, true);
-
 }
 
 
@@ -1785,7 +1619,6 @@ function titan_car_listing_posttype()
 
 
 	);
-
 }
 
 
@@ -1905,7 +1738,6 @@ function titan_car_listing_taxonomy()
 
 
 	));
-
 }
 
 
@@ -2017,7 +1849,6 @@ function titan_car_listing_features()
 
 
 	));
-
 }
 
 
@@ -2059,7 +1890,6 @@ function titan_listing_archeive()
 
 
 	return ob_get_clean();
-
 }
 
 
@@ -2105,7 +1935,6 @@ function titan_car_listing_dashboard()
 
 
 	return ob_get_clean();
-
 }
 
 
@@ -2144,7 +1973,7 @@ function titan_car_listing_insert_dashboard()
 
 
 
-	
+
 
 	wp_enqueue_style('titan_car_listing_select_two_css');
 
@@ -2169,7 +1998,6 @@ function titan_car_listing_insert_dashboard()
 
 
 	return ob_get_clean();
-
 }
 
 
@@ -2225,7 +2053,6 @@ function titan_car_listing_settings()
 
 
 	);
-
 }
 
 
@@ -2243,7 +2070,6 @@ function titan_car_listing_setting()
 
 
 	include_once(plugin_dir_path(__FILE__) . 'templates/titan_car_listing_setting.php');
-
 }
 
 
@@ -2311,9 +2137,7 @@ function titan_add_vehicle_listing_page()
 
 
 		wp_insert_post($my_post);
-
 	}
-
 }
 
 
@@ -2373,13 +2197,11 @@ function titan_car_listing_single_template($titan_Car_listing_single)
 
 
 		$titan_Car_listing_single = plugin_dir_path(__FILE__) . 'templates/titan_car_listing_single.php';
-
 	}
 
 
 
 	return $titan_Car_listing_single;
-
 }
 
 
@@ -2429,10 +2251,7 @@ function titan_car_listing_archive_template($titan_car_listing_archive)
 
 
 		$titan_car_listing_archive = plugin_dir_path(__FILE__) . 'templates/titan_car_listing_archive.php';
-
 	}
 
 	return $titan_car_listing_archive;
-
 }
-
