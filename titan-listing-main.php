@@ -13,6 +13,7 @@
 require_once(plugin_dir_path(__FILE__) . 'templates/titan_car_listing_meta.php');
 
 add_action('init', 'titan_init_hook');
+
 function titan_init_hook()
 {
 
@@ -24,7 +25,6 @@ function titan_init_hook()
 	add_action("wp_ajax_nopriv_titan_filter_listings_dashboard", "titan_filter_listings_dashboard");
 
 }
-
 
 
 function titan_search_cars()
@@ -59,8 +59,6 @@ function titan_search_cars()
 
 		);
 
-
-
 		if ($publications->have_posts() && $titan_searched_string != '') {
 
 			$titan_suggestions_html = '<ul>';
@@ -83,6 +81,7 @@ function titan_search_cars()
 }
 
 function titan_filter_listings()
+
 {
 
 	$titan_searched_string = '';
@@ -92,28 +91,11 @@ function titan_filter_listings()
 	$titan_car_listing_exterior_color_value = '';
 	$titan_car_listing_interior_color_value = '';
 	$titan_car_listing_transmission_value = '';
-
-
-
 	$titan_custom_meta_query = array();
-
-
-
 	$titan_listing_html = '';
 
 
-
-
-
-
-
 	if (isset($_POST['titan_type']) && $_POST['titan_type'] != '') {
-
-
-
-
-
-
 
 		$titan_type = $_POST['titan_type'];
 
@@ -123,16 +105,9 @@ function titan_filter_listings()
 
 	if (isset($_POST['titan_searched_string']) && $_POST['titan_searched_string'] != '') {
 
-
-
-
-
 		$titan_searched_string = $_POST['titan_searched_string'];
 
 	}
-
-
-
 
 
 	if (isset($_POST['titan_car_mileage']) && $_POST['titan_car_mileage'] != '') {
