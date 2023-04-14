@@ -184,79 +184,35 @@ function titan_filter_listings()
 	}
 
 
-
-
-
 	if (isset($_POST['titan_car_location']) && $_POST['titan_car_location'] != '') {
-
-
-
-
 
 		$titan_car_location = $_POST['titan_car_location'];
 
-
-
 		array_push($titan_custom_meta_query, array(
 
-
-
 			'key' => 'titan_listing_map_location',
-
-
-
 			'value' => $titan_car_location,
-
-
-
 			'compare' => '=',
-
-
 
 		));
 	}
 
 
-
 	// echo json_encode($titan_custom_meta_query);
-
-
 
 	// die();
 
-
-
-
-
 	$paged = get_query_var('paged');
-
-
-
-
 
 	if ($titan_type == 'all') {
 
-
-
 		$publications = new WP_Query(
-
-
 
 			array(
 
-
-
 				'posts_per_page' => -1,
-
-
-
 				'post_type' => 'car-listing',
-
-
-
 				'order_by' => 'ASC',
-
-
 
 			)
 
