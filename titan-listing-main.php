@@ -4,7 +4,7 @@
  * Plugin Name: Titan Car Listing
  *	description: Titan Car Listing Plugin allow you to Create, edit and manage your car listings .
  *	Version: 1.0.0
- *	Author: Mubashar Alee
+ *	Author: Dilawar abbas
 */
 
 
